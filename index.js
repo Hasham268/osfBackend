@@ -48,7 +48,7 @@ app.post('/api/sendMail', async (req, res) => {
 })
 
 const secret = 'test';
-import adminSchema from "../server/models/admin.js";
+import adminSchema from "./models/admin.js";
 import jwt from "jsonwebtoken";
 
 adminSchema.create({
