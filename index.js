@@ -8,8 +8,8 @@ import postRoutes from "./routes/posts.js";
 import userRoutes from "./routes/users.js";
 import workerRoutes from "./routes/worker.js";
 import orderRoutes from "./routes/orders.js";
-import feedbackRoutes from "./routes/feedback.js"
-import adminRoutes from "./routes/admin.js"
+import feedbackRoutes from "./routes/feedback.js";
+import adminRoutes from "./routes/admin.js";
 import sendMail from "./utils/mail.js";
 
 const app = express();
@@ -48,7 +48,7 @@ app.post('/api/sendMail', async (req, res) => {
 })
 
 const secret = 'test';
-import adminSchema from "../server/models/admin.js"
+import adminSchema from "../server/models/admin.js";
 import jwt from "jsonwebtoken";
 
 adminSchema.create({
